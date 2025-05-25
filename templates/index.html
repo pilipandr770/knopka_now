@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Widget Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="voice-widget-container" class="voice-widget-container">
+        <div id="voice-bubble" class="voice-bubble" title="Утримуйте для запису">
+            🎤
+        </div>
+        <div id="voice-widget" class="voice-widget hidden">
+            <div class="header">
+                <span>🤖 Voice Assistant</span>
+                <button id="close-widget" title="Згорнути">×</button>
+            </div>
+            <div id="chat-box" class="chat-box"></div>
+            <div class="controls">
+                <input id="chat-input" type="text" placeholder="Напишіть або скажіть..." autocomplete="off">
+                <button id="mic-btn" title="Говорити">🎤</button>
+                <button id="send-btn" title="Надіслати">➤</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='voice-widget.js') }}"></script>
+</body>
+</html>
