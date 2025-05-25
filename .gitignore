@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Віртуальне оточення
+venv/
+env/
+ENV/
+.venv/
+pip-wheel-metadata/
+pip-log.txt
+
+# IDE/VSCode
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# macOS, Windows
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Секрети і токени
+.env
+.env.*
+!*.example
+
+# Node/npm (якщо коли-небудь буде фронт на npm)
+node_modules/
+npm-debug.log*
+
+# Render і Python Build
+instance/
+build/
+dist/
+*.bak
+*.swp
+
+# Бекапи
+*.bak
+*.old
+*.orig
+
+# Файли тестів/завантажень
+*.db
+*.sqlite3
+
+# Coverage
+.coverage
+htmlcov/
+.coverage.*
+
+# pytest
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
